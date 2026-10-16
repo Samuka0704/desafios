@@ -1,21 +1,16 @@
-// PRIMEIRO BOTÃO
+let numero = 0;
 
-function sobreMim() {
+function aumentar() {
+    numero++;
 
-    document.getElementById("texto").innerHTML =
-        "Meu nome é Samuel, sou estudante de " +
-        "Desenvolvimento de Sistemas e gosto de " +
-        "aprender coisas novas sobre tecnologia.";
+    if (numero >= 20) {
+        numero = 0;
+    }
+
+    document.getElementById("contador").textContent = numero;
 }
 
 
-// SEGUNDO BOTÃO
-
-function meusObjetivos() {
-
-    document.getElementById("texto").innerHTML =
-        "Meus objetivos são aprender HTML, CSS, " +
-        "JavaScript, desenvolver meus próprios " +
-        "projetos e futuramente trabalhar " +
-        "na área de programação.";
+function mudarTema() {
+    document.body.classList.toggle("claro");
 }
