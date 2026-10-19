@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080e1c;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #111c35;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+}
+
+header h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* CONTEÚDO */
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.conteudo {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+h2 {
+    color: #ffffff;
+    margin: 25px 0;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    background: #ffffff;
+    color: #080e1c;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.card {
+    background: #15213b;
+    padding: 30px;
+    width: 250px;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+}
+
+.card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 18px #ffffff;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #111c35;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #ffffff;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
