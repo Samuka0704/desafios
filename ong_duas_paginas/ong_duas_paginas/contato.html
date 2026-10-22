@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero Adotar | Amigos de Patas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+
+    <a href="index.html" class="logo">
+        🐾 Amigos de Patas
+    </a>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="index.html#sobre">Quem Somos</a>
+        <a href="index.html#animais">Animais</a>
+        <a href="contato.html">Quero Adotar</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="section tint">
+
+    <h1>Quero Adotar</h1>
+
+    <p>
+        Preencha o formulário abaixo e dê o
+        primeiro passo para encontrar seu novo amigo!
+    </p>
+
+    <div class="contact">
+
+        <!-- INFORMAÇÕES -->
+        <div>
+
+            <h2>Entre em Contato</h2>
+
+            <p>
+                <strong>Endereço:</strong><br>
+                Rua das Patinhas, 123 - São Paulo, SP
+            </p>
+
+            <p>
+                <strong>E-mail:</strong><br>
+                contato@amigosdepatas.exemplo
+            </p>
+
+            <p>
+                <strong>Telefone:</strong><br>
+                (11) 0000-0000
+            </p>
+
+            <p>
+                Estamos esperando por você!
+            </p>
+
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <form id="form-adocao">
+
+            <h2>Formulário de Adoção</h2>
+
+            <div class="two">
+
+                <label>
+                    Nome:
+                    <input type="text"
+                    name="nome"
+                    placeholder="Seu nome"
+                    required>
+                </label>
+
+                <label>
+                    Sobrenome:
+                    <input type="text"
+                    name="sobrenome"
+                    placeholder="Seu sobrenome"
+                    required>
+                </label>
+
+            </div>
+
+            <label>
+                E-mail:
+                <input type="email"
+                name="email"
+                placeholder="xaviersamukax@gmail.com"
+                required>
+            </label>
+
+            <label>
+                Telefone:
+                <input type="tel"
+                name="telefone"
+                placeholder="(14)981719028"
+                required>
+            </label>
+
+            <fieldset>
+
+                <legend>
+                    Você mora em casa ou apartamento?
+                </legend>
+
+                <label>
+                    <input type="radio"
+                    name="moradia"
+                    value="casa"
+                    required>
+                    Casa
+                </label>
+
+                <label>
+                    <input type="radio"
+                    name="moradia"
+                    value="apartamento">
+                    Apartamento
+                </label>
+
+            </fieldset>
+
+            <label>
+                Por que deseja adotar?
+
+                <textarea
+                name="motivacao"
+                rows="5"
+                placeholder="Conte um pouco sobre você..."
+                required></textarea>
+
+            </label>
+
+            <button type="submit" class="btn">
+                Enviar Formulário
+            </button>
+
+            <p id="mensagem" role="status"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <div>
+        <h3>🐾 Amigos de Patas</h3>
+        <p>© 2026 - Todos os direitos reservados.</p>
+    </div>
+
+    <div>
+        <a href="index.html">Voltar ao início</a>
+        <p>Instagram | WhatsApp</p>
+    </div>
+
+</footer>
+
+<script>
+
+document.getElementById("form-adocao")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    document.getElementById("mensagem").textContent =
+    "Formulário preenchido com sucesso! " +
+    "Esta é uma demonstração, nenhum dado foi enviado.";
+
+    this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
